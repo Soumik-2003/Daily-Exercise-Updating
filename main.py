@@ -46,6 +46,3 @@ for exercise in response.json()["exercises"]:
     workout_response = requests.post(url=workout_api_endpoint, json=body, headers=workout_header)
     workout_response.raise_for_status()
     print(workout_response.text)
-
-# workout_response1 = requests.get(url=workout_api_endpoint, headers=workout_header)
-# print(workout_response1.json())
